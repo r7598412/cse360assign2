@@ -26,12 +26,16 @@ public class AddingMachine {
 		tos = tos + " + " + str;
 	}
 	
+	// subtract value from total and save the transcation
 	public void subtract (int value) {
-		
+		total = total - value;
+		String str = Integer.toString(value);
+		tos = tos + " - " +str;
 	}
-		
+			
+	// return transcation	
 	public String toString () {
-		return "";
+		return tos;
 	}
 
 	public void clear() {
